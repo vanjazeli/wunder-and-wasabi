@@ -1,0 +1,21 @@
+// ========================================
+// layout
+// ========================================
+
+body {
+	background-image: url('assets/images/body-background.jpg');
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+	opacity: 0;
+	@include animation {
+		transition: $transition-primary;
+		transition-property: opacity;
+		opacity: 1;
+	}
+}
+
+.wrap {
+	padding: 0 20px;
+	max-width: 1100px;
+	margin: 0 auto;
+}

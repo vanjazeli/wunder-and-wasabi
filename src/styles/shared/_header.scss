@@ -1,0 +1,113 @@
+// ========================================
+// header
+// ========================================
+
+.header {
+	padding: 30px 60px;
+	isolation: isolate;
+	@include flex-sb-c;
+
+	@include tablet {
+		padding: 28px 15px;
+	}
+
+	@include phone {
+		padding: 13px 15px;
+	}
+}
+
+.header__logo-mask {
+	width: 254px;
+	overflow: hidden;
+
+	@include mobile {
+		width: 152px;
+	}
+}
+
+.header__logo-image {
+	animation: logo 6s steps(13) infinite;
+
+	@include mobile {
+		height: 48px;
+	}
+}
+
+.header__nav {
+	@include flex-c-c;
+
+	@include mobile {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: 100%;
+		height: 100%;
+		background-color: $darker;
+
+		@include animation {
+			transition: $transition-primary;
+			transition-property: left;
+		}
+	}
+
+	@include tablet {
+		width: 500px;
+	}
+
+	@include phone {
+		width: 100%;
+	}
+}
+
+.header__nav--active {
+	@include tablet {
+		left: calc(100% - 500px);
+	}
+
+	@include phone {
+		left: 0;
+	}
+}
+
+.header__nav-holder {
+	@include flex-c-c;
+
+	@include mobile {
+		flex-direction: column;
+		transform: translateY(-10vh);
+	}
+}
+
+.header__buttons {
+	@include flex-c-c;
+
+	@include desktop {
+		margin-right: 7.1vw;
+
+		> :not(:last-child) {
+			margin-right: 3.8541vw;
+		}
+	}
+
+	@include mobile {
+		flex-direction: column;
+		margin-bottom: 50px;
+
+		> :not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.header__hamburger {
+	display: none;
+
+	@include mobile {
+		display: unset;
+		z-index: 3;
+	}
+
+	@include mobile {
+		transform: translateX(19px);
+	}
+}

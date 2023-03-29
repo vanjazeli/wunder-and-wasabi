@@ -1,0 +1,24 @@
+// ========================================
+// keyframes
+// ========================================
+
+@keyframes body {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes logo {
+	0% {
+		transform: none;
+	}
+	90% {
+		transform: none;
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
