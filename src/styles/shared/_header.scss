@@ -6,6 +6,8 @@
 	padding: 30px 60px;
 	isolation: isolate;
 	@include flex-sb-c;
+	position: relative;
+	z-index: 10;
 
 	@include tablet {
 		padding: 28px 15px;
@@ -20,7 +22,7 @@
 	width: 254px;
 	overflow: hidden;
 
-	@include mobile {
+	@include small {
 		width: 152px;
 	}
 }
@@ -28,7 +30,7 @@
 .header__logo-image {
 	animation: logo 6s steps(13) infinite;
 
-	@include mobile {
+	@include small {
 		height: 48px;
 	}
 }
@@ -36,7 +38,7 @@
 .header__nav {
 	@include flex-c-c;
 
-	@include mobile {
+	@include small {
 		position: fixed;
 		z-index: 2;
 		top: 0;
@@ -72,7 +74,7 @@
 .header__nav-holder {
 	@include flex-c-c;
 
-	@include mobile {
+	@include small {
 		flex-direction: column;
 		transform: translateY(-10vh);
 	}
@@ -89,7 +91,7 @@
 		}
 	}
 
-	@include mobile {
+	@include small {
 		flex-direction: column;
 		margin-bottom: 50px;
 
@@ -102,12 +104,12 @@
 .header__hamburger {
 	display: none;
 
-	@include mobile {
+	@include small {
 		display: unset;
 		z-index: 3;
 	}
 
-	@include mobile {
+	@include small {
 		transform: translateX(19px);
 	}
 }

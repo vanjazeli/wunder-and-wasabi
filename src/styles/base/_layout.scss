@@ -7,6 +7,8 @@ body {
 	background-repeat: repeat-y;
 	background-size: 100% auto;
 	opacity: 0;
+	isolation: isolate;
+
 	@include animation {
 		transition: $transition-primary;
 		transition-property: opacity;

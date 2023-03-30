@@ -16,6 +16,16 @@
 	align-items: center;
 }
 
+@mixin responsive-font($minS, $maxS, $minW, $maxW) {
+	font-size: #{$minS}px;
+	@media all and (min-width: #{$minW}px) and (max-width: #{$maxW}px) {
+		font-size: calc(#{$minS}px + (#{$maxS} - #{$minS}) * (100vw - #{$minW}px) / (#{$maxW} - #{$minW}));
+	}
+	@media all and (min-width: #{$maxW}px) {
+		font-size: #{$maxS}px;
+	}
+}
+
 // utilities
 
 $desktop: 1200px;
@@ -27,7 +37,13 @@ $tablet: 800px;
 	}
 }
 
-@mixin mobile {
+@mixin large {
+	@media screen and (min-width: $tablet) {
+		@content;
+	}
+}
+
+@mixin small {
 	@media screen and (max-width: $desktop) {
 		@content;
 	}

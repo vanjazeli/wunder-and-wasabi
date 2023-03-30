@@ -19,7 +19,7 @@
 		font-size: 18px;
 	}
 
-	@include mobile {
+	@include small {
 		font-size: 16px;
 	}
 }
@@ -27,21 +27,19 @@
 .h1 {
 	font-family: $font-druk;
 	text-align: center;
+	@include responsive-font(22, 65, 320, 1920);
 
 	@include desktop {
-		font-size: 65px;
-		line-height: 1.08;
+		line-height: 1.16;
 		font-weight: 500;
 		letter-spacing: 0.02em;
 	}
 
 	@include tablet {
-		font-size: 35px;
 		line-height: 1.3333;
 	}
 
 	@include phone {
-		font-size: 22px;
 		line-height: 1.45;
 	}
 }

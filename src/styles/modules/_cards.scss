@@ -1,0 +1,165 @@
+// ========================================
+// cards
+// ========================================
+
+.cards {
+	isolation: isolate;
+	padding-top: 14px;
+	position: relative;
+}
+
+.cards__holder {
+	display: flex;
+}
+
+.cards__row {
+	display: flex;
+	flex-direction: column;
+
+	@include large {
+		width: 16.77vw;
+	}
+
+	@include phone {
+		width: 20vw;
+	}
+}
+
+.cards__row--mod-1 {
+	padding-top: 9.53vw;
+}
+
+.cards__row--mod-2 {
+	padding-top: 4.9vw;
+}
+
+.cards__row--mod-3 {
+	padding-top: 0;
+}
+
+.cards__row--mod-4 {
+	padding-top: 6.25vw;
+}
+
+.cards__row--mod-5 {
+	padding-top: 7.29vw;
+}
+
+.cards__row--first {
+	width: 4.8vw;
+	padding-top: 16.25vw;
+
+	@include phone {
+		display: none;
+	}
+}
+
+.cards__row--last {
+	width: 11.35vw;
+	padding-top: 16.2vw;
+
+	@include phone {
+		display: none;
+	}
+}
+
+.cards__card {
+	margin: 0.782vw;
+	overflow: hidden;
+
+	@include desktop {
+		border-radius: 10px;
+	}
+
+	@include small {
+		border-radius: 5px;
+	}
+}
+
+.cards__card--primary {
+	background-color: $primary;
+	height: 21vw;
+	margin-left: 0;
+	width: 4vw;
+	border-radius: 0 10px 10px 0;
+}
+
+.cards__card--secondary {
+	background-color: $secondary;
+	height: 21vw;
+	margin-right: 0;
+	width: 10.6vw;
+	border-radius: 10px 0 0 10px;
+}
+
+.cards__card .cards__card--mod-1 {
+	height: 20vw;
+}
+
+.cards__card--mod-2 {
+	height: 6.1vw;
+}
+
+.cards__card--mod-3 {
+	height: 10vw;
+}
+
+.cards__card--mod-4 {
+	height: 20.8vw;
+}
+
+.cards__card--mod-5 {
+	height: 16.2vw;
+}
+
+.cards__card--mod-6 {
+	height: 9.3vw;
+}
+
+.cards__card--mod-7 {
+	height: 19vw;
+}
+
+.cards__decoration {
+	position: absolute;
+}
+
+.cards__decoration--primary {
+	width: 13.96vw;
+	z-index: -1;
+
+	@include desktop {
+		top: 1.46vw;
+		left: 10.57vw;
+	}
+
+	@include tablet {
+		top: -0.21vw;
+		left: 10.625vw;
+	}
+
+	@include phone {
+		top: 11.46vw;
+		left: 8.87vw;
+	}
+}
+
+.cards__decoration--secondary {
+	right: 1vw;
+	width: 9.79vw;
+
+	@include desktop {
+		top: 6.56vw;
+	}
+
+	@include tablet {
+		top: 4.86vw;
+	}
+}
+
+.cards__image,
+.cards__video {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
