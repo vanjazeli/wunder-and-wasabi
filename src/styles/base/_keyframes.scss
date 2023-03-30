@@ -22,3 +22,42 @@
 		transform: translateX(-100%);
 	}
 }
+
+@keyframes caret {
+	0% {
+		opacity: 0;
+	}
+}
+
+@keyframes blink {
+	0% {
+		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+	}
+	50% {
+		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+	}
+	51% {
+		text-shadow: none;
+	}
+	55% {
+		text-shadow: none;
+	}
+	56% {
+		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+	}
+	60% {
+		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+	}
+	61% {
+		text-shadow: none;
+	}
+	65% {
+		text-shadow: none;
+	}
+	66% {
+		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+	}
+	100% {
+		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+	}
+}

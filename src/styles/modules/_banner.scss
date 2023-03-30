@@ -1,0 +1,93 @@
+// ========================================
+// banner
+// ========================================
+
+.banner {
+	@include desktop {
+		padding: 212px 0 100px;
+	}
+
+	@include tablet {
+		padding: 171px 0 100px;
+	}
+
+	@include phone {
+		padding: 60px 0 100px;
+	}
+}
+
+.banner__heading {
+	color: $white;
+
+	@include desktop {
+		margin-bottom: 14px;
+	}
+
+	@include tablet {
+		margin-bottom: 17px;
+	}
+
+	@include phone {
+		margin-bottom: 18px;
+	}
+}
+
+.banner__digital {
+	font-family: $font-lores;
+	color: $primary;
+	position: relative;
+	text-shadow: 0px 0px 38px rgba($primary, 0.9);
+	z-index: -1;
+	letter-spacing: -0.15em;
+	line-height: 1.34285;
+	padding-right: 12px;
+
+	&::after {
+		content: '';
+		background-color: $white;
+		position: absolute;
+		width: 2px;
+
+		@include animation {
+			animation: caret 1s infinite steps(2);
+		}
+	}
+
+	@include desktop {
+		font-size: 70px;
+
+		&::after {
+			height: 70px;
+			top: 22px;
+			right: 4px;
+		}
+	}
+
+	@include tablet {
+		font-size: 34px;
+
+		&::after {
+			height: 35px;
+			right: 7px;
+			top: 10px;
+		}
+	}
+
+	@include animation {
+		animation: blink 2s ease-in-out infinite;
+	}
+}
+
+.banner__paragraph {
+	color: $white;
+	text-align: center;
+	margin: 0 auto;
+
+	@include desktop {
+		max-width: 806px;
+	}
+
+	@include tablet {
+		max-width: 600px;
+	}
+}

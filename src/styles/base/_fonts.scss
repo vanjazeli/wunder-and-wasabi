@@ -4,7 +4,7 @@
 
 @font-face {
 	font-family: 'Inter';
-	src: url('assets/fonts/Inter-Medium.woff2') format('woff2'), url('assets/fonts/Inter-Medium.woff') format('woff'), url('assets/fonts/Inter-Medium.ttf') format('ttf');
+	src: url('assets/fonts/Inter-Medium.woff2') format('woff2'), url('assets/fonts/Inter-Medium.woff') format('woff'), url('assets/fonts/Inter-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
 	font-family: 'Inter';
-	src: url('assets/fonts/Inter-Bold.woff2') format('woff2'), url('assets/fonts/Inter-Bold.woff') format('woff'), url('assets/fonts/Inter-Medium.ttf') format('ttf');
+	src: url('assets/fonts/Inter-Bold.woff2') format('woff2'), url('assets/fonts/Inter-Bold.woff') format('woff'), url('assets/fonts/Inter-Medium.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -20,7 +20,7 @@
 
 @font-face {
 	font-family: 'Inter';
-	src: url('assets/fonts/Inter-Regular.woff2') format('woff2'), url('assets/fonts/Inter-Regular.woff') format('woff'), url('assets/fonts/Inter-Medium.ttf') format('ttf');
+	src: url('assets/fonts/Inter-Regular.woff2') format('woff2'), url('assets/fonts/Inter-Regular.woff') format('woff'), url('assets/fonts/Inter-Medium.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -29,6 +29,22 @@
 @font-face {
 	font-family: 'Druk Wide';
 	src: url('assets/fonts/DrukWide-Bold.woff2') format('woff2'), url('assets/fonts/DrukWide-Bold.woff') format('woff'), url('assets/fonts/DrukWide-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Druk Wide';
+	src: url('assets/fonts/DrukWide-Medium.woff2') format('woff2'), url('assets/fonts/DrukWide-Medium.woff') format('woff'), url('assets/fonts/DrukWide-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'LoRes 9 Plus OT Wide';
+	src: url('assets/fonts/LoRes9PlusOTWide-Bold.woff2') format('woff2'), url('assets/fonts/LoRes9PlusOTWide-Bold.woff') format('woff'), url('assets/fonts/LoRes9PlusOTWide-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
