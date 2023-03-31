@@ -51,7 +51,7 @@
 		height: 70%;
 		top: 50%;
 		right: 5px;
-		transform: translateY(-50%);
+		transform: translateY(-40%);
 
 		@include animation {
 			animation: caret 1s infinite steps(2);
