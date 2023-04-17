@@ -6,6 +6,18 @@
 	isolation: isolate;
 	padding-top: 14px;
 	position: relative;
+
+	@include desktop {
+		padding-bottom: 100px;
+	}
+
+	@include tablet {
+		padding-bottom: 50px;
+	}
+
+	@include phone {
+		padding-bottom: 0;
+	}
 }
 
 .cards__holder {

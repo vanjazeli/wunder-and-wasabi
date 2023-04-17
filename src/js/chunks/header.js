@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import helpers from '../helpers';
 
 const header = {
 	hamburger: document.querySelector('.js-header-hamburger'),
@@ -30,6 +31,7 @@ const header = {
 			.add(gsap.set(this.links, { opacity: 0, x: 50 }))
 			.add(gsap.to(this.links, { opacity: 1, x: 0, delay: 0.3, stagger: 0.1, duration: 0.3 }));
 		this.openState = true;
+		helpers.disableScroll();
 	},
 
 	closeMenu: function () {
@@ -39,6 +41,7 @@ const header = {
 			link.removeAttribute('style');
 		});
 		this.openState = false;
+		helpers.enableScroll();
 	},
 };
 

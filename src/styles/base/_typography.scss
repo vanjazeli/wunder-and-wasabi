@@ -10,6 +10,20 @@
 	color: $secondary;
 }
 
+.digital {
+	font-family: $font-lores;
+}
+
+.tag {
+	// @include large {
+	// 	font-size: 18px;
+	// }
+	display: block;
+	font-size: 18px;
+	letter-spacing: -0.02em;
+	line-height: 1.7;
+}
+
 .text {
 	line-height: 1.55;
 	letter-spacing: 0.02em;
@@ -22,6 +36,13 @@
 	@include small {
 		font-size: 16px;
 	}
+}
+
+.text-strong {
+	@include responsive-font(16, 24, 320, 1920);
+	line-height: 1.458333;
+	letter-spacing: 0.03em;
+	font-family: $font-druk;
 }
 
 .h1 {

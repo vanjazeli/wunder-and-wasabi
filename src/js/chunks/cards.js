@@ -37,14 +37,14 @@ const cards = {
 
 					if (animationDirection) {
 						gsap.to(row, {
-							y: scrollPosition * 0.08,
-							duration: 0.2,
+							y: `${scrollPosition * 0.004}vw`,
+							duration: 0.5,
 							ease: 'easeInOut',
 						});
 					} else {
 						gsap.to(row, {
-							y: -scrollPosition * 0.08,
-							duration: 0.2,
+							y: `${-scrollPosition * 0.004}vw`,
+							duration: 0.5,
 							ease: 'easeInOut',
 						});
 					}

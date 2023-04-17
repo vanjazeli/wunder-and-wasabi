@@ -1,0 +1,76 @@
+// ========================================
+// info
+// ========================================
+
+.info {
+	padding: 178px 300px 0 500px;
+	position: relative;
+}
+
+.info__image-decoration {
+	position: absolute;
+	right: 74vw;
+	height: 16vw;
+	top: 254px;
+}
+
+.info__video-decoration {
+	display: none;
+}
+
+.info__content {
+	max-width: 764px;
+	margin-left: auto;
+	position: relative;
+
+	&::before {
+		content: '';
+		height: 120px;
+		width: 1px;
+		background-color: $primary;
+		position: absolute;
+		left: 0;
+		top: -146px;
+	}
+}
+
+.info__tag {
+	margin-bottom: 44px;
+}
+
+.info__paragraphs {
+	margin-bottom: 44px;
+
+	> :not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+.info__paragraph {
+	color: $white;
+}
+
+.info__button {
+	margin-bottom: 360px;
+	position: relative;
+
+	&::after {
+		content: '';
+		height: 302px;
+		width: 1px;
+		background-color: $primary;
+		position: absolute;
+		left: 0;
+		bottom: -338px;
+	}
+}
+
+.info__short-text {
+	display: block;
+	@include responsive-font(20, 40, 320, 1920);
+	font-family: $font-druk;
+	font-weight: 700;
+	color: $white;
+	letter-spacing: 0.02em;
+	font-weight: 500;
+}
