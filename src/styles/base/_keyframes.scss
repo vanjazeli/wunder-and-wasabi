@@ -31,10 +31,10 @@
 
 @keyframes blink {
 	0% {
-		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+		text-shadow: 0 0 38px rgba($primary, 0.9);
 	}
 	50% {
-		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+		text-shadow: 0 0 38px rgba($primary, 0.9);
 	}
 	51% {
 		text-shadow: none;
@@ -43,10 +43,10 @@
 		text-shadow: none;
 	}
 	56% {
-		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+		text-shadow: 0 0 38px rgba($primary, 0.9);
 	}
 	60% {
-		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+		text-shadow: 0 0 38px rgba($primary, 0.9);
 	}
 	61% {
 		text-shadow: none;
@@ -55,9 +55,9 @@
 		text-shadow: none;
 	}
 	66% {
-		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+		text-shadow: 0 0 38px rgba($primary, 0.9);
 	}
 	100% {
-		text-shadow: 0px 0px 38px rgba($primary, 0.9);
+		text-shadow: 0 0 38px rgba($primary, 0.9);
 	}
 }

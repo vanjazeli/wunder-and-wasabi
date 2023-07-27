@@ -16,13 +16,13 @@
 	align-items: center;
 }
 
-@mixin responsive-font($minS, $maxS, $minW, $maxW) {
-	font-size: #{$minS}px;
-	@media all and (min-width: #{$minW}px) and (max-width: #{$maxW}px) {
-		font-size: calc(#{$minS}px + (#{$maxS} - #{$minS}) * (100vw - #{$minW}px) / (#{$maxW} - #{$minW}));
+@mixin responsive-font($min-s, $max-s, $min-w, $max-w) {
+	font-size: #{$min-s}px;
+	@media all and (min-width: #{$min-w}px) and (max-width: #{$max-w}px) {
+		font-size: calc(#{$min-s}px + (#{$max-s} - #{$min-s}) * (100vw - #{$min-w}px) / (#{$max-w} - #{$min-w}));
 	}
-	@media all and (min-width: #{$maxW}px) {
-		font-size: #{$maxS}px;
+	@media all and (min-width: #{$max-w}px) {
+		font-size: #{$max-s}px;
 	}
 }
 

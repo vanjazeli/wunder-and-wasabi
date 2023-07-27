@@ -3,7 +3,7 @@
 // ========================================
 
 body {
-	background-image: url('assets/images/body-background.jpg');
+	background-image: url('../assets/images/body-background.jpg');
 	background-repeat: repeat-y;
 	background-size: 100% auto;
 	opacity: 0;
@@ -20,4 +20,14 @@ body {
 	padding: 0 20px;
 	max-width: 1380px;
 	margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	background-color: transparent;
+}
+
+html {
+	scrollbar-width: none;
+	scroll-behavior: smooth;
 }
