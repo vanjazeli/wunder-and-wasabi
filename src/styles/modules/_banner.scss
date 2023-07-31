@@ -4,7 +4,7 @@
 
 .banner {
 	@include desktop {
-		padding: 11.04vw 0 5.21vw;
+		padding: 11.04vw 0 6.6vw;
 	}
 
 	@include tablet {
@@ -20,7 +20,7 @@
 	color: $white;
 
 	@include desktop {
-		margin-bottom: 14px;
+		margin-bottom: 16px;
 	}
 
 	@include tablet {
