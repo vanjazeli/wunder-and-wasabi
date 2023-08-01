@@ -3,19 +3,61 @@
 // ========================================
 
 .info {
-	padding: 178px 300px 0 500px;
 	position: relative;
+
+	@include desktop {
+		padding: 178px 300px 0 500px;
+	}
+
+	@include tablet {
+		padding: 215px 0 0 28vw;
+	}
+
+	@include phone {
+		padding: 27vw 0;
+	}
 }
 
 .info__image-decoration {
 	position: absolute;
 	right: 74vw;
 	height: 16vw;
-	top: 254px;
+
+	@include desktop {
+		top: 254px;
+	}
+
+	@include tablet {
+		top: 215px;
+	}
+
+	@include phone {
+		display: none;
+	}
 }
 
 .info__video-decoration {
-	display: none;
+	height: 22vw;
+	overflow: hidden;
+	position: absolute;
+	width: 100vw;
+	mask-image: url('../assets/images/waw-big-logo-left.png');
+	mask-size: 100% 100%;
+
+	@include desktop {
+		top: 254px;
+		right: -85vw;
+	}
+
+	@include tablet {
+		top: 612px;
+		right: -80vw;
+	}
+
+	@include phone {
+		bottom: 42vw;
+		left: 80vw;
+	}
 }
 
 .info__content {
@@ -25,17 +67,45 @@
 
 	&::before {
 		content: '';
-		height: 120px;
 		width: 1px;
 		background-color: $primary;
 		position: absolute;
 		left: 0;
-		top: -146px;
+	}
+
+	@include desktop {
+		&::before {
+			height: 120px;
+			top: -146px;
+		}
+	}
+
+	@include tablet {
+		&::before {
+			height: 160px;
+			top: -190px;
+		}
+	}
+
+	@include phone {
+		width: calc(100% - 30px);
+		margin: 0 auto;
+
+		&::before {
+			height: 20vw;
+			top: -24.37vw;
+		}
 	}
 }
 
 .info__tag {
-	margin-bottom: 38px;
+	@include desktop {
+		margin-bottom: 38px;
+	}
+
+	@include small {
+		margin-bottom: 20px;
+	}
 }
 
 .info__paragraphs {
@@ -51,17 +121,41 @@
 }
 
 .info__button {
-	margin-bottom: 354px;
 	position: relative;
 
 	&::after {
 		content: '';
-		height: 302px;
 		width: 1px;
 		background-color: $primary;
 		position: absolute;
 		left: 0;
-		bottom: -338px;
+	}
+
+	@include desktop {
+		margin-bottom: 354px;
+
+		&::after {
+			height: 302px;
+			bottom: -338px;
+		}
+	}
+
+	@include tablet {
+		margin-bottom: 332px;
+
+		&::after {
+			bottom: -312px;
+			height: 288px;
+		}
+	}
+
+	@include phone {
+		margin-bottom: 134px;
+
+		&::after {
+			bottom: -124px;
+			height: 114px;
+		}
 	}
 }
 
@@ -72,5 +166,8 @@
 	font-weight: 700;
 	color: $white;
 	letter-spacing: 0.02em;
-	// font-weight: 500;
+
+	@include phone {
+		line-height: 26px;
+	}
 }

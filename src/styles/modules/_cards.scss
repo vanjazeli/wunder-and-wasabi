@@ -38,28 +38,81 @@
 }
 
 .cards__row--mod-1 {
-	padding-top: 9.53vw;
+	@include desktop {
+		padding-top: 9.53vw;
+	}
+
+	@include tablet {
+		padding-top: 6.53vw;
+	}
+
+	@include phone {
+		padding-top: 10.6vw;
+	}
 }
 
 .cards__row--mod-2 {
-	padding-top: 4.9vw;
+	@include desktop {
+		padding-top: 4.9vw;
+	}
+
+	@include tablet {
+		padding-top: 2.3vw;
+	}
+
+	@include phone {
+		padding-top: 11.5vw;
+	}
 }
 
 .cards__row--mod-3 {
-	padding-top: 0;
+	@include large {
+		padding-top: 0;
+	}
+
+	@include phone {
+		padding-top: 18.5vw;
+	}
 }
 
 .cards__row--mod-4 {
-	padding-top: 6.25vw;
+	@include desktop {
+		padding-top: 6.25vw;
+	}
+
+	@include tablet {
+		padding-top: 3.7vw;
+	}
+
+	@include phone {
+		padding-top: 12vw;
+	}
 }
 
 .cards__row--mod-5 {
-	padding-top: 7.29vw;
+	@include desktop {
+		padding-top: 7.29vw;
+	}
+
+	@include tablet {
+		padding-top: 4.6vw;
+	}
+
+	@include phone {
+		padding-top: 14.3vw;
+	}
 }
 
 .cards__row--first {
 	width: 4.8vw;
-	padding-top: 16.25vw;
+
+	@include desktop {
+		padding-top: 16.25vw;
+	}
+
+	@include tablet {
+		padding-top: 13.5vw;
+	}
 
 	@include phone {
 		display: none;
@@ -68,7 +121,14 @@
 
 .cards__row--last {
 	width: 11.35vw;
-	padding-top: 16.2vw;
+
+	@include desktop {
+		padding-top: 16.2vw;
+	}
+
+	@include tablet {
+		padding-top: 13.5vw;
+	}
 
 	@include phone {
 		display: none;

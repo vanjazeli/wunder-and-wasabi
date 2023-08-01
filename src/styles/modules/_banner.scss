@@ -8,11 +8,11 @@
 	}
 
 	@include tablet {
-		padding: 21.375vw 0 12.5vw;
+		padding: 26.7vw 0 22.5vw;
 	}
 
 	@include phone {
-		padding: 18.75vw 0 31.25px;
+		padding: 17.75vw 0 31.25px;
 	}
 }
 
@@ -24,11 +24,12 @@
 	}
 
 	@include tablet {
-		margin-bottom: 17px;
+		margin-bottom: 15px;
 	}
 
 	@include phone {
-		margin-bottom: 18px;
+		margin-bottom: 15px;
+		padding: 0 5px;
 	}
 }
 
