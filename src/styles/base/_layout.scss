@@ -3,6 +3,7 @@
 // ========================================
 
 body {
+	color: $white;
 	background-image: url('../assets/images/body-background.jpg');
 	background-repeat: repeat-y;
 	background-size: 100% auto;
@@ -13,6 +14,11 @@ body {
 		transition: $transition-primary;
 		transition-property: opacity;
 		opacity: 1;
+	}
+
+	button,
+	a {
+		color: $white;
 	}
 }
 

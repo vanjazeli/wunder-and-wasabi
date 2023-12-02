@@ -17,8 +17,6 @@
 }
 
 .banner__heading {
-	color: $white;
-
 	@include desktop {
 		margin-bottom: 16px;
 	}
@@ -65,7 +63,6 @@
 }
 
 .banner__paragraph {
-	color: $white;
 	text-align: center;
 	margin: 0 auto;
 

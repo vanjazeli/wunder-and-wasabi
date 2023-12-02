@@ -116,10 +116,6 @@
 	}
 }
 
-.info__paragraph {
-	color: $white;
-}
-
 .info__button {
 	position: relative;
 
@@ -164,7 +160,6 @@
 	@include responsive-font(20, 40, 320, 1920);
 	font-family: $font-druk;
 	font-weight: 700;
-	color: $white;
 	letter-spacing: 0.02em;
 
 	@include phone {
