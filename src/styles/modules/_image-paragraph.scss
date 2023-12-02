@@ -1,0 +1,92 @@
+// ========================================
+// image-paragraph
+// ========================================
+
+.image-paragraph {
+	@include large {
+		padding: 100px 0;
+	}
+
+	@include phone {
+		padding: 13px 0 50px;
+	}
+}
+
+.image-paragraph__block {
+	display: flex;
+
+	@include large {
+		align-items: flex-start;
+	}
+
+	@include tablet {
+		justify-content: center;
+	}
+
+	@include phone {
+		flex-direction: column;
+	}
+}
+
+.image-paragraph__wrap {
+	max-width: 1372px;
+	width: calc(100% - 30px);
+	margin: 0 auto;
+}
+
+.image-paragraph__image-holder {
+	animation: floating 8s infinite ease-in-out;
+
+	@include desktop {
+		height: 393px;
+		width: 378px;
+	}
+
+	@include small {
+		height: 206px;
+		width: 196px;
+	}
+
+	@include phone {
+		margin-right: -42px;
+		align-self: center;
+	}
+}
+
+.image-paragraph__image-wrap {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.image-paragraph__image {
+	animation: glitch 5s steps(23) infinite;
+
+	@include desktop {
+		height: 393px;
+	}
+
+	@include small {
+		height: 206px;
+	}
+}
+
+.image-paragraph__content {
+	@include desktop {
+		padding: 18px 0 0 70px;
+		max-width: 668px;
+	}
+
+	@include tablet {
+		padding: 10px 0 0 30px;
+		max-width: 574px;
+	}
+}
+
+.image-paragraph__heading {
+	margin-bottom: 10px;
+}
+
+.image-paragraph__paragraph {
+	font-family: $font-druk;
+}

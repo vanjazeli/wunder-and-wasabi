@@ -61,3 +61,30 @@
 		text-shadow: 0 0 38px rgba($primary, 0.9);
 	}
 }
+
+@keyframes glitch {
+	0% {
+		transform: translateX(0);
+	}
+	70% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0);
+	}
+	90% {
+		transform: translateY(0);
+	}
+	95% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

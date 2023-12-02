@@ -49,6 +49,19 @@
 	font-family: $font-druk;
 }
 
+.text-strong-small {
+	line-height: 1.6;
+	letter-spacing: 0.02em;
+
+	@include desktop {
+		font-size: 20px;
+	}
+
+	@include small {
+		font-size: 18px;
+	}
+}
+
 .h1 {
 	font-family: $font-druk;
 	text-align: center;
@@ -66,4 +79,10 @@
 		line-height: 1.45;
 		letter-spacing: 0.05em;
 	}
+}
+
+.h2 {
+	@include responsive-font(20, 40, 320, 1920);
+	letter-spacing: 0.02em;
+	line-height: 1.25;
 }
