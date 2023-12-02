@@ -15,13 +15,13 @@
 }
 
 .tag {
-	// @include large {
-	// 	font-size: 18px;
-	// }
 	display: block;
-	font-size: 18px;
 	letter-spacing: -0.02em;
 	line-height: 1.7;
+
+	@include large {
+		font-size: 18px;
+	}
 
 	@include small {
 		font-size: 16px;
