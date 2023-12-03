@@ -159,15 +159,3 @@
 		}
 	}
 }
-
-.info__short-text {
-	display: block;
-	@include responsive-font(20, 40, 320, 1920);
-	font-family: $font-druk;
-	font-weight: 700;
-	letter-spacing: 0.02em;
-
-	@include phone {
-		line-height: 26px;
-	}
-}

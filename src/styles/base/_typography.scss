@@ -49,6 +49,17 @@
 	font-family: $font-druk;
 }
 
+.text-strong-large {
+	@include responsive-font(20, 40, 320, 1920);
+	font-family: $font-druk;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+
+	@include phone {
+		line-height: 26px;
+	}
+}
+
 .text-strong-small {
 	line-height: 1.6;
 	letter-spacing: 0.02em;
