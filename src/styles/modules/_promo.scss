@@ -9,15 +9,32 @@
 	@include desktop {
 		padding: 98px 0;
 	}
+
+	@include tablet {
+		padding: 50px 0;
+	}
+
+	@include phone {
+		padding: 32px 0;
+	}
 }
 
 .promo__geometry-1 {
 	position: absolute;
-	top: -110px;
-	right: calc(100% - 132px);
 	height: 27vw;
 	z-index: -1;
 	opacity: 0.6;
+
+	@include desktop {
+		top: -110px;
+		right: calc(100% - 132px);
+	}
+
+	@include small {
+		top: -21%;
+		width: 18vw;
+		right: calc(100% - 72px);
+	}
 }
 
 .promo__geometry-2 {
@@ -40,17 +57,39 @@
 .promo__top {
 	position: relative;
 	max-width: 780px;
-	padding-top: 230px;
 	margin: 0 0 40px auto;
 
 	&::before {
 		content: '';
 		width: 1px;
-		height: 228px;
 		background-color: $secondary;
 		position: absolute;
 		left: 0;
 		top: -24px;
+	}
+
+	@include desktop {
+		padding-top: 230px;
+
+		&::before {
+			height: 228px;
+		}
+	}
+
+	@include tablet {
+		padding-top: 136px;
+
+		&::before {
+			height: 136px;
+		}
+	}
+
+	@include phone {
+		padding-top: 42px;
+
+		&::before {
+			height: 56px;
+		}
 	}
 }
 
@@ -75,9 +114,16 @@
 .promo__card-outter {
 	position: relative;
 	isolation: isolate;
-	flex: 1 1 33.33%;
-	max-width: 33.33%;
-	padding: 20px 33px;
+
+	@include desktop {
+		flex: 1 1 33.33%;
+		max-width: 33.33%;
+		padding: 20px 33px;
+	}
+
+	@include small {
+		padding: 20px 0 44px;
+	}
 }
 
 .promo__card-outter--primary {
@@ -123,15 +169,39 @@
 .promo__card-decoration {
 	position: absolute;
 	top: 0;
-	left: -15px;
 	z-index: -1;
-	height: 64%;
-	width: 63%;
+
+	@include desktop {
+		height: 238px;
+		width: 302px;
+	}
+
+	@include large {
+		left: -15px;
+	}
+
+	@include tablet {
+		height: 67%;
+		width: 63%;
+	}
+
+	@include phone {
+		height: 252px;
+		width: 208px;
+		left: -19px;
+	}
 }
 
 .promo__card-heading {
-	width: 90%;
 	margin-bottom: 20px;
+
+	@include desktop {
+		width: 90%;
+	}
+
+	@include tablet {
+		max-width: 252px;
+	}
 }
 
 .promo__card-accent {
