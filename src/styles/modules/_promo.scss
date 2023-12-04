@@ -1,0 +1,139 @@
+// ========================================
+// promo
+// ========================================
+
+.promo {
+	position: relative;
+	isolation: isolate;
+
+	@include desktop {
+		padding: 98px 0;
+	}
+}
+
+.promo__geometry-1 {
+	position: absolute;
+	top: -110px;
+	right: calc(100% - 132px);
+	height: 27vw;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+.promo__geometry-2 {
+	position: absolute;
+	bottom: -38%;
+	right: 0;
+	height: 30vw;
+	transform: translateX(50%) scaleX(-0.3);
+	width: 17vw;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+.promo__top-wrap {
+	max-width: 1372px;
+	margin: 0 auto;
+	width: calc(100% - 30px);
+}
+
+.promo__top {
+	position: relative;
+	max-width: 780px;
+	padding-top: 230px;
+	margin: 0 0 40px auto;
+
+	&::before {
+		content: '';
+		width: 1px;
+		height: 228px;
+		background-color: $secondary;
+		position: absolute;
+		left: 0;
+		top: -24px;
+	}
+}
+
+.promo__hype {
+	@include responsive-font(20, 43, 320, 1920);
+	letter-spacing: -0.12em;
+	line-height: 1.32558;
+}
+
+.promo__bottom-wrap {
+	max-width: 1438px;
+	width: calc(100% - 30px);
+	margin: 0 auto;
+}
+
+.promo__bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.promo__card-outter {
+	position: relative;
+	isolation: isolate;
+	flex: 1 1 33.33%;
+	max-width: 33.33%;
+	padding: 20px 33px;
+}
+
+.promo__card-outter--primary {
+	.promo__card-decoration {
+		background: url('../assets/images/card-decoration-1.png') no-repeat center top / cover;
+		left: -24px;
+	}
+
+	.promo__card-heading,
+	.promo__card-accent {
+		color: $primary;
+	}
+}
+
+.promo__card-outter--secondary {
+	.promo__card-decoration {
+		background: url('../assets/images/card-decoration-2.png') no-repeat center top / cover;
+	}
+
+	.promo__card-heading,
+	.promo__card-accent {
+		color: $tertiary;
+	}
+}
+
+.promo__card-outter--tertiary {
+	.promo__card-decoration {
+		background: url('../assets/images/card-decoration-3.png') no-repeat center top / cover;
+	}
+
+	.promo__card-heading,
+	.promo__card-accent {
+		color: $secondary;
+	}
+}
+
+.promo__card {
+	padding: 40px;
+	background-color: $grey-mid;
+	height: 100%;
+}
+
+.promo__card-decoration {
+	position: absolute;
+	top: 0;
+	left: -15px;
+	z-index: -1;
+	height: 64%;
+	width: 63%;
+}
+
+.promo__card-heading {
+	width: 90%;
+	margin-bottom: 20px;
+}
+
+.promo__card-accent {
+	margin-top: 20px;
+}

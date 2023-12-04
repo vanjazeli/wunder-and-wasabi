@@ -104,6 +104,10 @@ section {
 	display: block;
 }
 
+img {
+	user-select: none;
+}
+
 body,
 button,
 input {

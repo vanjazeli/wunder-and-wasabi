@@ -20,6 +20,11 @@ body {
 	a {
 		color: $white;
 	}
+
+	::selection {
+		color: $secondary;
+		background-color: $white;
+	}
 }
 
 .wrap {

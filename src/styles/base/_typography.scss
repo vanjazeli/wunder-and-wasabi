@@ -28,6 +28,19 @@
 	}
 }
 
+.tag-wide {
+	line-height: 1.5555;
+	letter-spacing: -0.02em;
+
+	@include desktop {
+		font-size: 16px;
+	}
+
+	@include small {
+		font-size: 15px;
+	}
+}
+
 .text {
 	line-height: 1.55;
 	letter-spacing: 0.02em;
@@ -39,6 +52,19 @@
 
 	@include small {
 		font-size: 16px;
+	}
+}
+
+.text-small {
+	line-height: 1.5555;
+	letter-spacing: -0.0166em;
+
+	@include desktop {
+		font-size: 16px;
+	}
+
+	@include small {
+		font-size: 15px;
 	}
 }
 
@@ -58,6 +84,10 @@
 	@include phone {
 		line-height: 26px;
 	}
+}
+
+.text-strong-large--spaced {
+	line-height: 1.25;
 }
 
 .text-strong-small {
@@ -96,4 +126,11 @@
 	@include responsive-font(20, 40, 320, 1920);
 	letter-spacing: 0.02em;
 	line-height: 1.25;
+}
+
+.h3 {
+	@include responsive-font(18, 25, 320, 1920);
+	letter-spacing: 0.02em;
+	line-height: 1.28;
+	font-family: $font-druk;
 }
