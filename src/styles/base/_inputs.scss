@@ -48,6 +48,9 @@
 
 	@include tablet {
 		padding: 22px 30px 24px;
+	}
+
+	@include small {
 		height: 216px;
 	}
 

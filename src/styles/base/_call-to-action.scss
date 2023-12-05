@@ -38,7 +38,6 @@
 		position: absolute;
 		transform: translateY(-50%);
 		top: 50%;
-		left: 28px;
 		width: 20px;
 	}
 
@@ -61,8 +60,30 @@
 		}
 	}
 
+	@include large {
+		.neon-button__icon {
+			left: 28px;
+		}
+
+		@include hover {
+			.neon-button__icon {
+				left: 35px;
+			}
+		}
+	}
+
 	@include phone {
 		padding: 20px 26px 20px 52px;
+
+		.neon-button__icon {
+			left: 18px;
+		}
+
+		@include hover {
+			.neon-button__icon {
+				left: 22px;
+			}
+		}
 	}
 }
 
