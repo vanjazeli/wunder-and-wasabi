@@ -62,19 +62,14 @@ $tablet: 800px;
 }
 
 @mixin hover {
-	&:hover,
-	&:focus {
+	&:hover {
 		@media screen and (min-width: calc(#{$desktop} + 1px)) {
 			@content;
 		}
 	}
-}
 
-@mixin focus {
 	&:focus {
-		@media screen and (min-width: calc(#{$desktop} + 1px)) {
-			@content;
-		}
+		@content;
 	}
 }
 

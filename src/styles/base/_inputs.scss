@@ -13,6 +13,7 @@
 	color: $white;
 	letter-spacing: -0.018em;
 	box-shadow: 0 40px 50px rgba($primary, 0);
+	min-width: 0;
 
 	&::placeholder {
 		color: $white;
@@ -23,9 +24,17 @@
 		transition-property: border-color, box-shadow;
 	}
 
-	@include focus {
+	&:focus {
 		border-color: $primary;
 		box-shadow: 0 40px 50px rgba($primary, 0.12);
+	}
+
+	@include desktop {
+		padding: 24px 30px;
+	}
+
+	@include small {
+		padding: 20px 24px 22px;
 	}
 }
 
@@ -35,5 +44,14 @@
 
 	@include desktop {
 		height: 218px;
+	}
+
+	@include tablet {
+		padding: 22px 30px 24px;
+		height: 216px;
+	}
+
+	@include phone {
+		padding: 22px 30px 24px;
 	}
 }
