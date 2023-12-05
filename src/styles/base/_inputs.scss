@@ -23,7 +23,7 @@
 		transition-property: border-color, box-shadow;
 	}
 
-	&:focus {
+	@include focus {
 		border-color: $primary;
 		box-shadow: 0 40px 50px rgba($primary, 0.12);
 	}
