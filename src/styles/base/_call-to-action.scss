@@ -65,3 +65,13 @@
 		padding: 20px 26px 20px 52px;
 	}
 }
+
+.neon-button--secondary {
+	background-color: $secondary;
+	box-shadow: 0 40px 38px rgba($secondary, 0.19);
+
+	@include hover {
+		background-color: $primary;
+		box-shadow: 0 40px 38px rgba($primary, 0.19);
+	}
+}
