@@ -1,0 +1,47 @@
+// ========================================
+// contact
+// ========================================
+
+.contact {
+	@include desktop {
+		padding: 117px 0 150px;
+	}
+}
+
+.contact__wrap {
+	max-width: 1372px;
+	margin: 0 auto;
+	width: calc(100% - 30px);
+}
+
+.contact__heading {
+	@include desktop {
+		margin-bottom: 61px;
+	}
+}
+
+.contact__inset {
+	@include responsive-font(28, 70, 320, 1920);
+	letter-spacing: -0.15em;
+	line-height: 1.34285;
+}
+
+.contact__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__input-holder {
+	margin-bottom: 30px;
+}
+
+.contact__top-inputs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 60px;
+	margin-bottom: 43px;
+}
+
+.contact__button {
+	align-self: center;
+}
