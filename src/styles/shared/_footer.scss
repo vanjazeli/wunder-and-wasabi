@@ -54,14 +54,23 @@
 
 .footer__content-wrap {
 	padding: 50px 0 150px 60px;
-	display: grid;
-	grid-template-columns: 1fr 202px 262px;
 	max-width: 1266px;
-	gap: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__paragraph {
+	flex: 1 1;
+	max-width: calc(48.8% - 50px);
 }
 
 .footer__navigation {
-	margin-left: 15px;
+	flex: 1 1;
+	max-width: calc(18% - 50px);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-width: 196px;
 
 	> :not(:last-child) {
 		margin-bottom: 40px;
@@ -69,6 +78,8 @@
 }
 
 .footer__social {
+	flex: 1 1;
+	max-width: calc(26.7% - 60px);
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -81,5 +92,5 @@
 
 .footer__social-links {
 	display: flex;
-	gap: 50px;
+	justify-content: space-between;
 }
