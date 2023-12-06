@@ -68,6 +68,19 @@
 	}
 }
 
+.text-little {
+	line-height: 1.6;
+	letter-spacing: 0.02em;
+
+	@include desktop {
+		font-size: 16px;
+	}
+
+	@include small {
+		font-size: 15px;
+	}
+}
+
 .text-strong {
 	@include responsive-font(16, 24, 320, 1920);
 	line-height: 1.458333;
@@ -132,5 +145,12 @@
 	@include responsive-font(18, 25, 320, 1920);
 	letter-spacing: 0.02em;
 	line-height: 1.28;
+	font-family: $font-druk;
+}
+
+.h4 {
+	font-size: 16px;
+	line-height: 1.28;
+	letter-spacing: 0.1em;
 	font-family: $font-druk;
 }
