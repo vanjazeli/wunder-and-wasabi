@@ -29,12 +29,11 @@
 
 .footer__main {
 	display: grid;
-	grid-template-columns: 360px 1fr;
+	grid-template-columns: 0.383fr 1.617fr;
 }
 
 .footer__logo-holder {
-	padding-top: 50px;
-	width: 360px;
+	padding: 50px 20px 0 0;
 }
 
 .footer__content {
