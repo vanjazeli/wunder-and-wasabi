@@ -17,7 +17,7 @@ const banner = {
 			cursor: '',
 			pauseFor: this.waitTime,
 			loop: true,
-			deleteSpeed: 100,
+			deleteSpeed: 10,
 		});
 	},
 };
