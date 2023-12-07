@@ -2,6 +2,10 @@
 // footer
 // ========================================
 
+.footer {
+	overflow: hidden;
+}
+
 .footer__logo-mask {
 	width: 254px;
 	overflow: hidden;
@@ -29,11 +33,26 @@
 
 .footer__main {
 	display: grid;
-	grid-template-columns: 0.383fr 1.617fr;
+
+	@include desktop {
+		grid-template-columns: 0.383fr 1.617fr;
+	}
+
+	@include tablet {
+		grid-template-columns: 1fr;
+	}
 }
 
 .footer__logo-holder {
-	padding: 50px 20px 0 0;
+	@include desktop {
+		padding: 50px 20px 0 0;
+	}
+
+	@include tablet {
+		order: 2;
+		padding: 0 0 50px;
+		@include flex-c-c;
+	}
 }
 
 .footer__content {
@@ -41,48 +60,97 @@
 
 	&::after {
 		content: '';
-		width: calc(((100vw - 100%) / 2) + 100%);
-		height: 100%;
 		position: absolute;
 		top: 0;
-		left: 0;
 		background-color: $black;
 		z-index: -1;
+	}
+
+	@include desktop {
+		&::after {
+			left: 0;
+			width: calc(((100vw - 100%) / 2) + 100%);
+			height: 100%;
+		}
+	}
+
+	@include tablet {
+		order: 1;
+
+		&::after {
+			left: -15px;
+			width: 100vw;
+			height: calc(100% + 103px);
+		}
 	}
 }
 
 .footer__content-wrap {
-	padding: 50px 0 150px 60px;
 	max-width: 1266px;
 	display: flex;
 	justify-content: space-between;
+
+	@include desktop {
+		padding: 50px 0 150px 60px;
+	}
+
+	@include tablet {
+		padding: 30px 0 50px;
+		flex-wrap: wrap;
+	}
 }
 
 .footer__paragraph {
-	flex: 1 1;
-	max-width: calc(48.8% - 50px);
+	@include desktop {
+		flex: 1 1 calc(48.8% - 50px);
+		max-width: calc(48.8% - 50px);
+	}
+
+	@include tablet {
+		flex: 1 1 calc(100%);
+		max-width: 100%;
+		margin-bottom: 49px;
+	}
 }
 
 .footer__navigation {
-	flex: 1 1;
+	flex: 1 1 calc(18% - 50px);
 	max-width: calc(18% - 50px);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	min-width: 196px;
 
-	> :not(:last-child) {
-		margin-bottom: 40px;
+	@include desktop {
+		padding-left: 14px;
+
+		> :not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+
+	@include tablet {
+		> :not(:last-child) {
+			margin-bottom: 24px;
+		}
 	}
 }
 
 .footer__social {
-	flex: 1 1;
-	max-width: calc(26.7% - 60px);
 	min-width: 176px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+
+	@include desktop {
+		flex: 1 1 calc(26.7% - 60px);
+		max-width: calc(26.7% - 60px);
+	}
+
+	@include tablet {
+		flex: 1 1 calc(46.7% - 60px);
+		max-width: calc(46.7% - 60px);
+	}
 }
 
 .footer__social-heading {
