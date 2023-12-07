@@ -80,6 +80,7 @@
 .footer__social {
 	flex: 1 1;
 	max-width: calc(26.7% - 60px);
+	min-width: 176px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
