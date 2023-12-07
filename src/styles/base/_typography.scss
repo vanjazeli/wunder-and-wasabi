@@ -151,6 +151,13 @@
 .h4 {
 	font-size: 16px;
 	line-height: 1.28;
-	letter-spacing: 0.1em;
 	font-family: $font-druk;
+
+	@include desktop {
+		letter-spacing: 0.1em;
+	}
+
+	@include small {
+		letter-spacing: 0.04em;
+	}
 }
