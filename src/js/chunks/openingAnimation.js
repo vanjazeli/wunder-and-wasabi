@@ -19,7 +19,7 @@ const openingAnimation = {
 				.add(gsap.fromTo(this.secondStageElements, { opacity: 0, y: 100 }, { opacity: 1, y: 0, stagger: 0.05 }), 'second-stage')
 				.add('third-stage')
 				.add(gsap.set(this.thirdStageElements, { transformOrigin: 'center left' }), 'third-stage')
-				.add(gsap.fromTo(this.thirdStageElements, { opacity: 0, y: 10, rotate: 5 }, { opacity: 1, y: 0, rotate: 0, stagger: 0.05 }), 'third-stage');
+				.add(gsap.fromTo(this.thirdStageElements, { opacity: 0, y: -10, rotate: -5 }, { opacity: 1, y: 0, rotate: 0, stagger: 0.05 }), 'third-stage');
 		});
 	},
 };
