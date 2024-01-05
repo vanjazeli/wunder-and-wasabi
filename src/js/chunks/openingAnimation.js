@@ -11,6 +11,7 @@ const openingAnimation = {
 
 	animationSettings: function () {
 		window.addEventListener('load', () => {
+			// eslint-disable-next-line
 			const timeLine = gsap
 				.timeline()
 				.add('first-stage')
