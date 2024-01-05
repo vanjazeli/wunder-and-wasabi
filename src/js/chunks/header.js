@@ -48,6 +48,7 @@ const header = {
 	},
 
 	scrollToSection: function (link) {
+		link.blur();
 		this.closeMenu();
 		const data = link.getAttribute('data-scroll-to');
 		const scrollToElement = document.querySelector(`[data-scroll-id="${data}"]`);
