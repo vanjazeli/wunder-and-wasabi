@@ -20,6 +20,9 @@ const header = {
 				this.closeMenu();
 			}
 		});
+		this.links.forEach((link) => {
+			link.addEventListener('click', () => this.scrollToSection(link));
+		});
 	},
 
 	openMenu: function () {
@@ -42,6 +45,16 @@ const header = {
 		});
 		this.openState = false;
 		helpers.enableScroll();
+	},
+
+	scrollToSection: function (link) {
+		this.closeMenu();
+		const data = link.getAttribute('data-scroll-to');
+		const scrollToElement = document.querySelector(`[data-scroll-id="${data}"]`);
+		scrollToElement.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+		});
 	},
 };
 

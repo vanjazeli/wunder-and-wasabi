@@ -17,11 +17,11 @@
 			<nav class="header__nav js-header-menu">
 				<div class="header__nav-holder">
 					<div class="header__buttons">
-						<button type="button" class="neon-link js-header-link js-opening-animation-third-stage-element">About us</button>
-						<button type="button" class="neon-link js-header-link js-opening-animation-third-stage-element">Why NFT</button>
-						<button type="button" class="neon-link js-header-link js-opening-animation-third-stage-element">Our Services</button>
+						<button type="button" class="neon-link js-header-link js-opening-animation-third-stage-element" data-scroll-to="about">About us</button>
+						<button type="button" class="neon-link js-header-link js-opening-animation-third-stage-element" data-scroll-to="why">Why NFT</button>
+						<button type="button" class="neon-link js-header-link js-opening-animation-third-stage-element" data-scroll-to="services">Our Services</button>
 					</div>
-					<button type="button" class="neon-button js-header-link js-opening-animation-third-stage-element">
+					<button type="button" class="neon-button js-header-link js-opening-animation-third-stage-element" data-scroll-to="contact">
 						<img src="./assets/images/arrow-right.svg" alt="" class="neon-button__icon" />
 						Let's talk
 					</button>
@@ -101,7 +101,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="info">
+			<section class="info" data-scroll-id="about">
 				<img src="./assets/images/waw-big-logo-right.png" alt="waw-big-logo.png" class="info__image-decoration" />
 				<div class="info__video-decoration">
 					<video autoplay="autoplay" muted="muted" loop="loop" playsinline="" class="info__video">
@@ -127,7 +127,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="image-paragraph">
+			<section class="image-paragraph" data-scroll-id="why">
 				<div class="image-paragraph__wrap">
 					<div class="image-paragraph__block js-image-paragraph-block">
 						<div class="image-paragraph__image-holder">
@@ -164,7 +164,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="promo">
+			<section class="promo" data-scroll-id="services">
 				<img class="promo__geometry-1" src="./assets/images/geometry.svg" alt="geometry.svg" />
 				<img class="promo__geometry-2" src="./assets/images/geometry.svg" alt="geometry.svg" />
 				<div class="promo__top-wrap">
@@ -201,7 +201,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="contact">
+			<section class="contact" data-scroll-id="contact">
 				<div class="contact__wrap">
 					<h2 class="contact__heading h1">We are <span class="contact__inset digital secondary">here</span> for you.</h2>
 					<form class="contact__form" action="">
