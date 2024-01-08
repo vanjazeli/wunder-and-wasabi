@@ -11,7 +11,7 @@ const textAnimation = {
 		setTimeout(() => {
 			this.handleSplit();
 			this.handleEvents();
-		}, 100);
+		}, 500);
 	},
 
 	handleSplit: function () {
