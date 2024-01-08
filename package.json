@@ -36,6 +36,7 @@
 	},
 	"dependencies": {
 		"gsap": "^3.11.5",
+		"split-type": "^0.3.4",
 		"typewriter-effect": "^2.19.0"
 	}
 }

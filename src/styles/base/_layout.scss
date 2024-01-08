@@ -46,3 +46,12 @@ html {
 main {
 	overflow: hidden;
 }
+
+.line {
+	overflow: hidden;
+	font-kerning: none;
+}
+
+.word {
+	opacity: 0;
+}
